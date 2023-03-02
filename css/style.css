@@ -4,7 +4,7 @@
     font-family: sans-serif;
 }
 
-ol, ul, dl {
+ol, ul, dl, p, h1, h2, h3, h4, h5, h6, address, figure{
     padding: 0;
     margin: 0;
 }
@@ -38,7 +38,7 @@ main > section > section {
 }
 
 main article > h3 {
-    color: gray;
+    color: dimgray;
     text-transform: uppercase;
 }
 
@@ -122,11 +122,183 @@ img {
         font-size: 32px;
     }
 
+    .about {
+        row-gap: 5vh;
+        width: 90%;
+    }
+
+    .about > section aside,
+    .about > section > article {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2vh;
+    }
+
+    .about > article {
+        row-gap: 3vh;
+    }
+
+    .about ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 4vh;
+    }
+
+    .skills > li {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2vh;
+    }
+
+    .skills > li > aside {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h6 {
+        border-radius: 20px;
+        height: 5px;
+        display: flex;
+        width: 100%;
+        background-color: gray;
+    }
+
+    .about h6 {
+        height: 100%;
+        width: 100%;
+        background-color: darkorange;
+        border-radius: 20px;
+    }
+
+    .about li:last-child span {
+        width: 90%;
+    }
+
+    .portfolio {
+        row-gap: 10vh;
+    }
+
+    .portfolio > article {
+        row-gap: 5vh;
+    }
+
+    .portfolio h3 {
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .portfolio figure {
+        display: flex;
+        flex-wrap: wrap;
+        width: 98%;
+        row-gap: 1vh;
+    }
+
+    .portfolio img {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .contact {
+        background-color: rgb(60, 60, 60);
+        row-gap: 10vh;
+    }
+
+    .contact aside {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5vh;
+    }
+
+    .contact > article {
+        row-gap: 3vh;
+    }
+
+    .contact h3,
+    .contact h4,
+    .contact p {
+        color: whitesmoke;
+    }
+
+    .contact h4 {
+        font-size: 30px;
+    }
+
+    .contact h3 {
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .contact ul {
+        row-gap: 2vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact li {
+        display: flex;
+        column-gap: 3vw;
+        align-items: center;
+    }
+
+    .contact i {
+        color: darkorange;
+    }
+
+    .contact li:first-child > a {
+        color: whitesmoke;
+    }
+
+    .contact > section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5vh;
+    }
+
+    .contact a {
+        color: darkorange;
+    }
+
+    .contact > section > article {
+        width: 100%;
+    }
+
+    form,
+    form > section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1vh;
+    }
+
+    input,
+    textarea {
+        padding: 5%;
+        background-color: darkgray;
+        color: whitesmoke;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: whitesmoke;
+    }
+
+    [type=submit] {
+        width: 70%;
+    }
+
+    address {
+        font-size: 14px;
+        color: whitesmoke;
+    }
+
     footer {
         align-items: center;
         padding: 20% 0 8% 0;
         background-color: rgb(30, 30, 30);
         row-gap: 5vh;
+        border-top: 1px solid gray;
     }
 
     footer ul {
