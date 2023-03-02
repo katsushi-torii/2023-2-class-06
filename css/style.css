@@ -266,14 +266,61 @@ img {
         width: 90%;
     }
 
+    .team {
+        row-gap: 5vh;
+    }
+
+    .team > section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 6vh;
+    }
+
+    .team figure {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5vh;
+    }
+
+    .team img {
+        width: 100%;
+    }
+
+    .team figcaption,
+    .team aside {
+        width: 100%;
+        align-items: center;
+    }
+
+    .team figcaption {
+        row-gap: 5vh;
+    }
+
+    .team ul {
+        display: none;
+    }
+
+    .team h4 {
+        background-color: white;
+        color: darkorange;
+        text-align: center;
+    }
+
+    .team small {
+        font-size: 16px;
+    }
+
     .portfolio {
         row-gap: 10vh;
     }
 
+    .team > article,
     .portfolio > article {
         row-gap: 5vh;
     }
 
+    .team h3,
     .portfolio h3 {
         font-size: 30px;
         font-weight: 400;
